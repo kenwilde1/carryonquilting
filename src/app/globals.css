@@ -2,32 +2,198 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.line {
+    height: 1px;
+    width: 80%;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.prices-splash {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/gallery/17.jpg');
+    height: 20vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.prep-splash {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/prep.jpeg');
+    height: 20vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gallery-splash {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/gallery/19.jpg');
+    height: 20vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ol > li::marker {
+    font-weight: bold;
   }
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('./images/hero.jpeg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.shadow-offset-black {
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 transparent),var(--tw-ring-shadow, 0 0 transparent),var(--tw-shadow);
+    --tw-shadow: 4px 4px black;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.desktop-menu {
+    margin-right: 250px;
+}
+
+.navbar {
+    z-index: 52;
+}
+
+.card {
+    width: 75vw;
+    background: white;
+}
+
+/* .card-content {
+    height: 25vh;
+} */
+
+.card-top {
+    width: 74.5vw;
+
+    .first-one {
+        width: 99.8%;
+    }
+
+    .first-two, .last-two {
+        width: 50% !important;
+    }
+
+    .first-three {
+        width: 75%;
+    }
+
+    .last-three {
+        width: 25%;
+    }
+
+    .first {
+        height: 5vh;
+    }
+
+    .last {
+        height: 3vh;
+    }
+
+    .first-four {
+        width: 100%;
+    }
+
+    .card-title {
+        padding-left: 10px;
+    }
+}
+
+.gallery-pic-container {
+    height: 250px;
+    width: 250px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.gallery-pic-container {
+    img {
+        -webkit-filter: brightness(100%);
+    }
+
+    img:hover {
+        -webkit-filter: brightness(70%);
+        -webkit-transition: all 0.4s ease;
+        -moz-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        -ms-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+    }
+}
+
+.slider-container {
+  position: fixed !important; 
+  left: 0 !important; 
+  right: 0 !important; 
+  top: 20%;
+  margin-left: auto !important; 
+  margin-right: auto !important; 
+  width: 100vw;
+  background: white;
+  height: 60vh;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  z-index:51;
+img {
+    width: 100vw;
+    height: 60vh;
+}
+}
+
+.modal-backdrop {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    background-color:rgba(0,0,0,0.6);
+    z-index: 50;
+}
+
+.close-modal {
+  position: absolute;
+  z-index: 999;
+  top:0;
+  right:0;
+  cursor: pointer;
+  font-size: 35px;
+  margin-right:10px;
+}
+
+.modal-next {
+    position: absolute;
+    z-index: 999;
+    top:45%;
+    right:0;
+    cursor: pointer;
+  
+    svg {
+      filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.7));
+    }
   }
-}
+
+  .modal-prev {
+    position: absolute;
+    z-index: 999;
+    top:45%;
+    left:0;
+    cursor: pointer;
+  
+    svg {
+      filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.7));
+    }
+  }
+
+  .pagingDots {
+    svg {
+        fill: white;
+        height: 15px;
+        width: 15px;
+    }
+    margin-right: 5px;
+  }
