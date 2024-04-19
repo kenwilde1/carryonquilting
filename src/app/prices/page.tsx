@@ -73,12 +73,16 @@ export default function Prices() {
           </div>
           <div className="card-content text-lg px-5 py-3 flex flex-col justify-around">
             <div className="flex gap-12">
-              <p className="leading-7">100" x 100"</p>
-              <p className="font-bold"> €125</p>
+              <p className="leading-7">70" x 90"</p>
+              <p className="font-bold"> €95</p>
             </div>
             <div className="flex gap-12">
-              <p className="leading-7">110" x 110"</p>
-              <p className="font-bold"> €130</p>
+              <p className="leading-7">80" x 90"</p>
+              <p className="font-bold"> €100</p>
+            </div>
+            <div className="flex gap-12">
+              <p className="leading-7">90" x 90"</p>
+              <p className="font-bold"> €110</p>
             </div>
             <a
               href="#"
