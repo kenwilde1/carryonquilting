@@ -10,7 +10,7 @@ export default function Sale() {
           Prices
         </h1>
       </div>
-      <div className="flex md:h-screen/60 flex-wrap mt-32 self-center gap-24 w-screen/75">
+      <div className="flex flex-wrap mt-24 mb-24 md:mt-32 md:mb-32 self-center justify-center gap-12 md:gap-36 w-screen/75">
         {data.map((product) => (
           <Product
             src={product.src}
@@ -26,11 +26,15 @@ export default function Sale() {
 
 function Product({ src, title, price, size }: any) {
   return (
-    <div className="shop-container flex flex-col">
+    <div className="shop-container w-screen/75 md:h-screen/50 md:w-screen/20 flex flex-col">
       <div>
-        <img className="shop-img" src={src} alt="deer-panel-image" />
+        <img
+          className="shop-img md:h-screen/40 md:w-screen/20"
+          src={src}
+          alt="deer-panel-image"
+        />
       </div>
-      <div className="flex flex-col bg-white justify-center items-center gap-3 shop-desc">
+      <div className="flex flex-col bg-slate-50 justify-center items-center gap-3 h-screen/20 md:h-screen/10">
         <h4 className="font-bold text-2xl">{title}</h4>
         <p>{size}</p>
         <p className="text-xl">€{price}</p>
