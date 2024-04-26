@@ -1,9 +1,9 @@
-import deerPanel from "./images/deer-panel.png";
-import stainedGlass from "./images/stained-glass.png";
-import summerFlowers from "./images/summer-flowers.png";
-import flowerPots from "./images/flower-pots.png";
-import foreverAutumn from "./images/forever-autumn.jpg";
-import nightStars from './images/night-stars.png';
+import deerPanel from "./images/deer-panel.webp";
+import stainedGlass from "./images/stained-glass.webp";
+import summerFlowers from "./images/summer-flowers.webp";
+import flowerPots from "./images/flower-pots.webp";
+import foreverAutumn from "./images/forever-autumn.webp";
+import nightStars from './images/night-stars.webp';
 
 export default [
     {
