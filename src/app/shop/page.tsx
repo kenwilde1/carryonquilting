@@ -7,7 +7,7 @@ export default function Sale() {
     <div className="flex flex-col justify-center">
       <div className="splash shop-splash self-center w-screen/75 mt-16 flex justify-center items-center rounded-lg">
         <h1 className="font-bold text-white text-4xl object-cover shadow-md">
-          Prices
+          For Sale
         </h1>
       </div>
       <div className="flex flex-wrap mt-24 mb-24 md:mt-32 md:mb-32 self-center justify-center gap-12 md:gap-36 w-screen/75">
