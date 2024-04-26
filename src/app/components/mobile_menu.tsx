@@ -15,7 +15,7 @@ export default function MobileMenu(props: any) {
         <Line />
         <Link href="/gallery">Gallery</Link>
         <Line />
-        <Link href="/sale">For Sale</Link>
+        <Link href="/shop">Shop</Link>
         <Line />
         <Link href="/links">Links</Link>
       </ul>

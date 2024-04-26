@@ -8,23 +8,22 @@
 }
 
 .prices-splash {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/gallery/17.jpg');
-    height: 20vh;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/gallery/12.webp');
 }
 
 .prep-splash {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/prep.jpeg');
-    height: 20vh;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .gallery-splash {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/gallery/19.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/gallery/10.webp');
+}
+
+.shop-splash {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/gallery/11.webp');
+}
+
+.splash {
     height: 20vh;
     background-position: center center;
     background-size: cover;
@@ -55,44 +54,13 @@ ol > li::marker {
     z-index: 52;
 }
 
-.card {
-    width: 75vw;
-    background: white;
-}
-
-/* .card-content {
-    height: 25vh;
-} */
-
 .card-top {
-    width: 74.5vw;
-
     .first-one {
-        width: 99.8%;
-    }
-
-    .first-two, .last-two {
-        width: 50% !important;
-    }
-
-    .first-three {
-        width: 75%;
-    }
-
-    .last-three {
-        width: 25%;
+        width: 100%;
     }
 
     .first {
         height: 5vh;
-    }
-
-    .last {
-        height: 3vh;
-    }
-
-    .first-four {
-        width: 100%;
     }
 
     .card-title {
@@ -131,9 +99,9 @@ ol > li::marker {
   left: 0 !important; 
   right: 0 !important; 
   top: 20%;
+  width: 100vw;
   margin-left: auto !important; 
   margin-right: auto !important; 
-  width: 100vw;
   background: white;
   height: 60vh;
   color: white;
@@ -196,4 +164,34 @@ img {
         width: 15px;
     }
     margin-right: 5px;
+  }
+
+  @media (min-width: 900px) {
+    .slider-container {
+        width: 50vw;
+    }
+  }
+
+  .shop-container {
+    height: 50vh;
+    width: 20vw;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.5s ease;
+  }
+
+  .shop-container:hover {
+    transform:scale(1.02);
+    cursor: pointer;
+  }
+
+
+
+  .shop-img {
+    height: 40vh;
+    width: 20vw;
+    border-bottom: 4px solid palevioletred;
+  }
+
+  .shop-desc {
+    height: 10vh;
   }

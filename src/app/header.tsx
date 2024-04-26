@@ -16,7 +16,7 @@ export default function Header() {
 
   return (
     <header>
-      <nav className="navbar bg-custom z-50 text-black h-20 shadow-[0_3px_10px_rgb(0,0,0,0.2)] flex justify-between px-5">
+      <nav className="navbar text-black h-20 shadow-[0_3px_10px_rgb(0,0,0,0.2)] flex justify-between px-5">
         <div className="flex items-center gap-2 cursor-pointer">
           <h1 className="font-bold text-xl text-rose-700">
             <Link href="/">Carry On Quilting</Link>

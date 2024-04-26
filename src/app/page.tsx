@@ -3,7 +3,7 @@ import About from "./images/about.jpeg";
 
 export default function Home() {
   return (
-    <main className="bg-custom">
+    <main>
       <div className="hero h-screen text-white flex flex-col items-center justify-center gap-6">
         <h1 className="text-4xl font-bold">Carry on Quilting</h1>
         <p className="italic text-slate-200">Jackie Preston</p>

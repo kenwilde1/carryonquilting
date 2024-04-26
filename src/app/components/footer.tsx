@@ -3,7 +3,7 @@ export default function Footer() {
     <div className="footer text-center shadow-[0_3px_10px_rgb(0,0,0,0.2)] py-10">
       <a
         href="#"
-        className="footer-header flex items-center text-rose-700 justify-center mb-5 text-2xl font-semibold text-gray-900"
+        className="flex items-center text-rose-700 justify-center mb-5 text-2xl font-semibold text-gray-900"
       >
         Carry On Quilting
       </a>

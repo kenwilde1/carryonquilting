@@ -30,7 +30,7 @@ export default function DesktopMenu() {
         </Link>
         <Link href="/gallery">
           <button
-            className={`px-6 py-2 hover:text-purple-700 ${
+            className={`px-6 py-2 hover:text-rose-700 ${
               pathname === "/gallery" ? activePageClassName : ""
             }`}
           >
@@ -39,25 +39,25 @@ export default function DesktopMenu() {
         </Link>
         <Link href="/prices">
           <button
-            className={`px-6 py-2 hover:text-purple-700 ${
+            className={`px-6 py-2 hover:text-rose-700 ${
               pathname === "/prices" ? activePageClassName : ""
             }`}
           >
             Prices
           </button>
         </Link>
-        <Link href="/forsale">
+        <Link href="/shop">
           <button
-            className={`px-6 py-2 hover:text-purple-700 ${
-              pathname === "/forsale" ? activePageClassName : ""
+            className={`px-6 py-2 hover:text-rose-700 ${
+              pathname === "/shop" ? activePageClassName : ""
             }`}
           >
-            For Sale
+            Shop
           </button>
         </Link>
         <Link href="/links">
           <button
-            className={`px-6 py-2 hover:text-purple-700 ${
+            className={`px-6 py-2 hover:text-rose-700 ${
               pathname === "/links" ? activePageClassName : ""
             }`}
           >

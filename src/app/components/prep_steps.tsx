@@ -6,7 +6,7 @@ export default function PrepSteps() {
       <h2 className="font-bold text-xl text-rose-700 text-center">
         Preparing a quilt for Longarm Quilting
       </h2>
-      <div className="card border border-black shadow-offset-black mt-10">
+      <div className="md:w-screen/45 bg-white border border-black shadow-offset-black mt-10">
         <div className="card-top flex flex-col">
           <div className="flex">
             <div className="first first-one bg-red-200 flex items-center pl-5 font-bold gap-4">
@@ -31,7 +31,7 @@ export default function PrepSteps() {
         </div>
       </div>
       <ArrowDown />
-      <div className="card border border-black shadow-offset-black">
+      <div className="md:w-screen/45 bg-white border border-black shadow-offset-black">
         <div className="card-top flex flex-col">
           <div className="flex">
             <div className="first first-one bg-red-200 flex items-center pl-5 font-bold gap-4">
@@ -54,7 +54,7 @@ export default function PrepSteps() {
         </div>
       </div>
       <ArrowDown />
-      <div className="card border border-black shadow-offset-black">
+      <div className="md:w-screen/45 bg-white border border-black shadow-offset-black">
         <div className="card-top flex flex-col">
           <div className="flex">
             <div className="first first-one bg-red-200 flex items-center pl-5 font-bold gap-4">
@@ -71,7 +71,7 @@ export default function PrepSteps() {
         </div>
       </div>
       <ArrowDown />
-      <div className="card border border-black shadow-offset-black">
+      <div className="md:w-screen/45 bg-white border border-black shadow-offset-black">
         <div className="card-top flex flex-col">
           <div className="flex">
             <div className="first first-one bg-red-200 flex items-center pl-5 font-bold gap-4">

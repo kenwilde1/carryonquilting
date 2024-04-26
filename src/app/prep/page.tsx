@@ -4,7 +4,7 @@ import { Phone, Mail, Instagram, Facebook } from "react-feather";
 export default function Prep() {
   return (
     <div className="prep flex mb-20 flex-col items-center text-gray-800 text-lg">
-      <div className="prep-splash w-screen/75 mt-16 flex justify-center items-center rounded-lg">
+      <div className="splash prep-splash w-screen/75 mt-16 flex justify-center items-center rounded-lg">
         <h1 className="font-bold text-white text-4xl object-cover shadow-md">
           Preparation
         </h1>

@@ -51,7 +51,7 @@ export const data = [
     },
     {
         imageLink: GalleryPics.thirteen.src,
-        type: 'quilt'
+        type: 'bag'
     },
     {
         imageLink: GalleryPics.fourteen.src,
@@ -59,38 +59,6 @@ export const data = [
     },
     {
         imageLink: GalleryPics.fifteen.src,
-        type: 'bag'
-    },
-    {
-        imageLink: GalleryPics.sixteen.src,
-        type: 'quilt'
-    },
-    {
-        imageLink: GalleryPics.seventeen.src,
-        type: 'quilt'
-    },
-    {
-      imageLink: GalleryPics.eighteen.src,
-      type: 'quilt'
-  },
-    {
-        imageLink: GalleryPics.nineteen.src,
-        type: 'quilt'
-    },
-    {
-        imageLink: GalleryPics.twenty.src,
-        type: 'quilt'
-    },
-    {
-        imageLink: GalleryPics.twentyOne.src,
         type: 'other'
-    },  
-    {
-        imageLink: GalleryPics.twentyTwo.src,
-        type: 'quilt'
-    },
-    {
-        imageLink: GalleryPics.twentyThree.src,
-        type: 'quilt'
-    },  
-  ];
+    }
+];

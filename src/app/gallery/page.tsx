@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Carousel, { PagingDots } from "nuka-carousel";
 import { data } from "./data";
+import Image from "next/image";
 
 export default function Gallery() {
   const [modal, setModal] = useState({ open: false, imageLink: "", index: 0 });
@@ -19,8 +20,8 @@ export default function Gallery() {
   }
 
   return (
-    <div className="flex flex-col items-center w-screen mb-32">
-      <div className="gallery-splash w-screen/75 mt-16 flex justify-center items-center rounded-lg">
+    <div className="flex flex-col items-center mb-32">
+      <div className="splash gallery-splash w-screen/75 mt-16 flex justify-center items-center rounded-lg">
         <h1 className="font-bold text-white text-4xl object-cover shadow-md">
           Gallery
         </h1>
@@ -59,7 +60,7 @@ export default function Gallery() {
           Other
         </button>
       </div>
-      <div className="flex w-screen/75 flex-wrap gap-8 content-start justify-center">
+      <div className="flex w-screen/75 md:h-screen/60 flex-wrap gap-8 content-start justify-center">
         {data.map(({ imageLink, type }, index) => {
           if (
             activeSelection === "all" ||
@@ -73,10 +74,12 @@ export default function Gallery() {
                 className="gallery-pic-container cursor-pointer rounded-lg"
                 onClick={() => openModal(imageLink, index)}
               >
-                <img
+                <Image
                   className="gallery-pic rounded-lg"
                   src={imageLink}
                   alt="gallery-photo"
+                  width={200}
+                  height={200}
                 />
               </div>
             );
@@ -98,7 +101,7 @@ export default function Gallery() {
 
 function getModalImages(activeSelection: string): any {
   const images = data
-    .map((pic, index) => {
+    .map((pic) => {
       if (
         activeSelection === "all" ||
         (activeSelection === "quilts" && pic.type === "quilt") ||
