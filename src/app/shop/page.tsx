@@ -26,10 +26,10 @@ export default function Sale() {
 
 function Product({ src, title, price, size }: any) {
   return (
-    <div className="shop-container w-screen/75 md:h-screen/50 md:w-screen/20 flex flex-col">
+    <div className="shop-container w-screen/75 md:h-screen/50 md:w-screen/40 flex flex-col">
       <div>
         <img
-          className="shop-img md:h-screen/40 md:w-screen/20"
+          className="shop-img md:h-screen/40 md:w-screen/40"
           src={src}
           alt="deer-panel-image"
         />

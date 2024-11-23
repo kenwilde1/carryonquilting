@@ -26,6 +26,7 @@ const config: Config = {
         "screen/20": "20vw",
         "screen/25": "25vw",
         "screen/30": "30vw",
+        "screen/40": "40vh",
         "screen/45": "45vw",
         "screen/50": "50vw",
         "screen/75": "75vw",
