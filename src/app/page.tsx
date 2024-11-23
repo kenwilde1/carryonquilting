@@ -27,12 +27,12 @@ export default function Home() {
         <section className="my-10">
           <div className="flex flex-col items-center p-8">
             <h2 className="font-bold text-4xl text-rose-700">About</h2>
-            <p className="mt-4 text-gray-600 text-lg text-center">
-              Providing a professional Longarm Quilting Service located in Naul,
-              North County Dublin. Run by Jackie Preston who has over 20 years
-              of quilting experience, running Carry on Quilting successfully for
+            <p className="mt-4 text-gray-600 text-md text-justify w-5/6 md:w-3/6">
+              Carry On Quilting is a professional longarm quilting service located in Naul, Co. Dublin. It is ran
+              by Jackie Preston who has over 20 years
+              of quilting experience, operating Carry on Quilting successfully for
               the past 15 years. She is a member of various local quilting
-              groups around North County Dublin.
+              groups around North Co. Dublin.
             </p>
             <div className="mt-12 md:mt-12">
               <img

@@ -55,13 +55,13 @@ export default function DesktopMenu() {
             Shop
           </button>
         </Link>
-        <Link href="/links">
+        <Link href="/contact">
           <button
             className={`px-6 py-2 hover:text-rose-700 ${
-              pathname === "/links" ? activePageClassName : ""
+              pathname === "/contact" ? activePageClassName : ""
             }`}
           >
-            Links
+            Contact
           </button>
         </Link>
       </ul>

@@ -189,3 +189,9 @@ img {
   .shop-desc {
     height: 10vh;
   }
+
+  .modal-close-button {
+    font-size: 3rem;
+    padding: 10px;
+    cursor: pointer;
+  }

@@ -60,7 +60,7 @@ export default function Gallery() {
           Other
         </button>
       </div>
-      <div className="flex w-screen/75 md:h-screen/60 flex-wrap gap-8 content-start justify-center">
+      <div className="flex w-screen/75 flex-wrap gap-8 content-start justify-center">
         {data.map(({ imageLink, type }, index) => {
           if (
             activeSelection === "all" ||
@@ -118,10 +118,11 @@ function getModalImages(activeSelection: string): any {
 
 function Modal({ index, closeModal, activeSelection }: any) {
   return (
-    <div>
+    <div key={index}>
       <Carousel
         slideIndex={index}
         defaultControlsConfig={{ pagingDotsClassName: "pagingDots" }}
+        renderTopRightControls={() => <div className="modal-close-button" onClick={closeModal}>X</div>}
       >
         {getModalImages(activeSelection)}
       </Carousel>
