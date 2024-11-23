@@ -11,7 +11,7 @@ const inter = Noto_Sans_JP({
 
 export const metadata: Metadata = {
   title: "Carry On Quilting",
-  description: "Developed by Kenny Wilde",
+  description: "Professional longarm quilting in Naul, Co.Dublin",
 };
 
 export default function RootLayout({
