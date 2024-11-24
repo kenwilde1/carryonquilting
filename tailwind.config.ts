@@ -30,6 +30,7 @@ const config: Config = {
         "screen/45": "45vw",
         "screen/50": "50vw",
         "screen/75": "75vw",
+        "screen/85": "85vw",
         "screen/90": "90vw"
       },
       colors: {

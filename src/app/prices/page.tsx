@@ -1,13 +1,13 @@
 export default function Prices() {
   return (
     <div className="flex justify-center items-center">
-      <div className="flex flex-col items-center justify-center flex-wrap w-screen/75 gap-12 content-start">
+      <div className="flex flex-col items-center justify-center flex-wrap w-screen/85 gap-12 content-start">
         <div className="splash prices-splash w-screen/75 mt-16 flex justify-center items-center rounded-lg">
           <h1 className="font-bold text-white text-4xl object-cover shadow-md">
             Prices
           </h1>
         </div>
-        <div className="w-screen/75 md:w-screen/25 bg-white border border-black shadow-offset-black mt-10">
+        <div className="w-screen/85 md:w-screen/50 bg-white border border-black shadow-offset-black mt-10">
           <div className="card-top flex flex-col">
             <div className="flex">
               <div className="first first-one bg-red-200 flex items-center pl-5 font-bold gap-4">
@@ -21,7 +21,7 @@ export default function Prices() {
               <p className="font-bold"> €40 - €60</p>
             </div>
             <a
-              href="#"
+              href="/contact"
               className="text-blue-500 hover:text-blue-600 font-medium"
             >
               Enquire here
@@ -29,7 +29,7 @@ export default function Prices() {
             </a>
           </div>
         </div>
-        <div className="w-screen/75 md:w-screen/25 bg-white border border-black shadow-offset-black mt-10">
+        <div className="w-screen/85 md:w-screen/50 bg-white border border-black shadow-offset-black mt-10">
           <div className="card-top flex flex-col">
             <div className="flex">
               <div className="first first-one bg-red-200 flex items-center pl-5 font-bold gap-4">
@@ -63,7 +63,7 @@ export default function Prices() {
             </a>
           </div>
         </div>
-        <div className="w-screen/75 md:w-screen/25 border bg-white border-black shadow-offset-black mt-10">
+        <div className="w-screen/85 md:w-screen/50 border bg-white border-black shadow-offset-black mt-10">
           <div className="card-top flex flex-col">
             <div className="flex">
               <div className="first first-one bg-red-200 flex items-center pl-5 font-bold gap-4">
@@ -93,7 +93,7 @@ export default function Prices() {
             </a>
           </div>
         </div>
-        <div className="w-screen/75 md:w-screen/25 bg-white border border-black shadow-offset-black mt-10 mb-16">
+        <div className="w-screen/85 md:w-screen/50 bg-white border border-black shadow-offset-black mt-10 mb-16">
           <div className="card-top flex flex-col">
             <div className="flex">
               <div className="first first-one bg-red-200 flex items-center pl-5 font-bold gap-4">
