@@ -9,14 +9,16 @@ export default function Home() {
         <p className="italic text-slate-200">Jackie Preston</p>
         <div className="flex gap-4 ">
           <div className="flex text-rose-600 rounded-xl bg-gradient-to-tr from-pink-300 to-blue-300 p-0.5 shadow-lg">
-            <button className="flex gap-2 font-bold bg-white px-4 py-3 rounded-xl">
+            <a href="https://www.instagram.com/jackiepreston319/"
+                target="_blank" className="flex gap-2 font-bold bg-white px-4 py-3 rounded-xl">
               <Instagram />
-            </button>
+            </a>
           </div>
           <div className="flex text-blue-800 rounded-xl bg-gradient-to-tr from-pink-300 to-blue-300 p-0.5 shadow-lg">
-            <button className="flex gap-2 font-bold bg-white px-4 py-3 rounded-xl">
+            <a href="https://www.facebook.com/carryonquilting/"
+                target="_blank" className="flex gap-2 font-bold bg-white px-4 py-3 rounded-xl">
               <Facebook />
-            </button>
+            </a>
           </div>
         </div>
         <div className="absolute bottom-10 z-10">
