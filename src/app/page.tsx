@@ -43,7 +43,7 @@ export default function Home() {
             </div>
             <div className="mt-8">
               <a
-                href="#"
+                href="/contact"
                 className="text-blue-500 hover:text-blue-600 font-medium"
               >
                 Get in touch here

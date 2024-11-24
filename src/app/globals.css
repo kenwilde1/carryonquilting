@@ -195,3 +195,25 @@ img {
     padding: 10px;
     cursor: pointer;
   }
+
+
+.gallery-pagination {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+  .page {
+    padding: 5px;
+    height: 3rem;
+    width: 3rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .active-page {
+    border: 2px solid black;
+  }

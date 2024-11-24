@@ -13,7 +13,14 @@ import twelve from './12.webp';
 import thirteen from './13.webp';
 import fourteen from './14.webp';
 import fifteen from './15.webp';
-
+import sixteen from './16.webp';
+import seventeen from './17.webp';
+import eighteen from './18.webp';
+import nineteen from './19.webp';
+import twenty from './20.webp';
+import twentyone from './21.webp';
+import twentytwo from './22.webp';
+import twentythree from './23.webp';
 
 export default {
     one,
@@ -30,5 +37,13 @@ export default {
     twelve,
     thirteen,
     fourteen,
-    fifteen
+    fifteen,
+    sixteen,
+    seventeen,
+    eighteen,
+    nineteen,
+    twenty,
+    twentytwo,
+    twentythree,
+    twentyone
 };

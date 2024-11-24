@@ -1,6 +1,7 @@
 import GalleryPics from "../images/gallery";
 
-export const data = [
+export const data = {
+  '1': [
     {
       imageLink: GalleryPics.one.src,
       type: 'quilt'
@@ -61,4 +62,34 @@ export const data = [
         imageLink: GalleryPics.fifteen.src,
         type: 'other'
     }
-];
+],
+'2': [    {
+  imageLink: GalleryPics.sixteen.src,
+  type: 'quilt'
+},    {
+  imageLink: GalleryPics.seventeen.src,
+  type: 'quilt'
+},    {
+  imageLink: GalleryPics.eighteen.src,
+  type: 'quilt'
+},    {
+  imageLink: GalleryPics.nineteen.src,
+  type: 'quilt'
+},
+{
+  imageLink: GalleryPics.twenty.src,
+  type: 'quilt'
+},
+{
+  imageLink: GalleryPics.twentyone.src,
+  type: 'quilt'
+},
+{
+  imageLink: GalleryPics.twentytwo.src,
+  type: 'quilt'
+},
+{
+  imageLink: GalleryPics.twentythree.src,
+  type: 'quilt'
+},]
+} as any;

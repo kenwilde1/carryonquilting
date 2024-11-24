@@ -8,6 +8,7 @@ import Image from "next/image";
 export default function Gallery() {
   const [modal, setModal] = useState({ open: false, imageLink: "", index: 0 });
   const [activeSelection, setActiveSelection] = useState("all");
+  const [currentPage, setCurrentPage] = useState('1') as any;
 
   function openModal(imageLink: string, index: number) {
     if (!modal.open) {
@@ -19,49 +20,22 @@ export default function Gallery() {
     setModal({ ...modal, open: false });
   }
 
+  function onPageUpdate(page: string) {
+    setCurrentPage(page);
+  }
+
   return (
     <div className="flex flex-col items-center mb-32">
-      <div className="splash gallery-splash w-screen/75 mt-16 flex justify-center items-center rounded-lg">
+      <div className="splash gallery-splash w-screen/75 mt-16 flex justify-center items-center rounded-lg mb-10">
         <h1 className="font-bold text-white text-4xl object-cover shadow-md">
           Gallery
         </h1>
       </div>
-      <div className="flex w-screen/75 justify-center m-7 gap-5">
-        <button
-          className={`${
-            activeSelection === "all" ? "border-2 border-black" : ""
-          } px-2 py-1`}
-          onClick={() => setActiveSelection("all")}
-        >
-          All
-        </button>
-        <button
-          className={`${
-            activeSelection === "quilts" ? "border-2 border-black" : ""
-          } px-2 py-1`}
-          onClick={() => setActiveSelection("quilts")}
-        >
-          Quilts
-        </button>
-        <button
-          className={`${
-            activeSelection === "bags" ? "border-2 border-black" : ""
-          } px-2 py-1`}
-          onClick={() => setActiveSelection("bags")}
-        >
-          Bags
-        </button>
-        <button
-          className={`${
-            activeSelection === "other" ? "border-2 border-black" : ""
-          } px-2 py-1`}
-          onClick={() => setActiveSelection("other")}
-        >
-          Other
-        </button>
+      <div className="gallery-pagination">
+        <GalleryPagination currentPage={currentPage} onPageUpdate={onPageUpdate} />
       </div>
-      <div className="flex w-screen/75 flex-wrap gap-8 content-start justify-center">
-        {data.map(({ imageLink, type }, index) => {
+      <div className="flex w-screen/75 flex-wrap gap-8 content-start justify-center mt-20">
+        {(data[currentPage] as any).map(({ imageLink, type }: any, index: number) => {
           if (
             activeSelection === "all" ||
             (activeSelection === "quilts" && type === "quilt") ||
@@ -93,15 +67,26 @@ export default function Gallery() {
           closeModal={closeModal}
           data={data}
           activeSelection={activeSelection}
+          currentPage={currentPage}
         />
       )}
     </div>
   );
 }
 
-function getModalImages(activeSelection: string): any {
-  const images = data
-    .map((pic) => {
+function GalleryPagination({ currentPage, onPageUpdate }: any): any {
+  const pages = Object.keys(data);
+  return (
+    pages.map(page => {
+      const isCurrentPage = page === currentPage;
+      return <div onClick={() => onPageUpdate(page)} className={`page ${isCurrentPage ? 'active-page' : ''}`}>{page}</div>
+    })
+  )
+}
+
+function getModalImages(activeSelection: string, currentPage: number): any {
+  const images = data[currentPage]
+    .map((pic: any) => {
       if (
         activeSelection === "all" ||
         (activeSelection === "quilts" && pic.type === "quilt") ||
@@ -111,12 +96,12 @@ function getModalImages(activeSelection: string): any {
         return <img src={pic.imageLink} />;
       }
     })
-    .filter((pic) => pic !== undefined);
+    .filter((pic: any) => pic !== undefined);
 
   return images;
 }
 
-function Modal({ index, closeModal, activeSelection }: any) {
+function Modal({ index, closeModal, activeSelection, currentPage }: any) {
   return (
     <div key={index}>
       <Carousel
@@ -124,7 +109,7 @@ function Modal({ index, closeModal, activeSelection }: any) {
         defaultControlsConfig={{ pagingDotsClassName: "pagingDots" }}
         renderTopRightControls={() => <div className="modal-close-button" onClick={closeModal}>X</div>}
       >
-        {getModalImages(activeSelection)}
+        {getModalImages(activeSelection, currentPage)}
       </Carousel>
       <div className="modal-backdrop" onClick={closeModal}></div>
     </div>
