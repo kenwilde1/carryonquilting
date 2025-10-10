@@ -7,12 +7,6 @@ import nightStars from './images/night-stars.webp';
 
 export default [
     {
-        src: deerPanel.src,
-        title: 'Deer Panel',
-        size: '33" x 42"',
-        price: 60
-    },
-    {
         src: stainedGlass.src,
         title: 'Stained Glass',
         size: '54" x 80"',
@@ -23,12 +17,6 @@ export default [
         title: 'Summer Flowers',
         size: '46" x 57"',
         price: 200
-    },
-    {
-        src: flowerPots.src,
-        title: 'Flower Pots',
-        size: '44" x 50"',
-        price: 150
     },
     {
         src: foreverAutumn.src,
